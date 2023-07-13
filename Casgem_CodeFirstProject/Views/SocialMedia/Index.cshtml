@@ -1,0 +1,32 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.SocialMedia>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+    int count = 0;
+}
+
+<h2>Sosyal Media</h2>
+<br />
+<a href="/SocialMedia/AddSocialMedia/"class="btn btn-outline-info">Yeni Sosyal Medya</a>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Sosyal Media</th>
+        <th>Rehber</th>
+        
+        <th>Siteye Git</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.SocialMediaName</td>
+            <td>@item.Guide.GuideName</td>
+            
+            <td><a href="@item.SocialMediaURL" class="btn btn-outline-dark"> Siteye Git </a></td>
+        </tr>
+      
+    }
+</table>

@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+
+<!--
+   Author: W3layouts
+   Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+@Html.Partial("PartialHead")
+<body id="home">
+    <section class=" w3l-header-4 header-sticky">
+        <!--header-->
+        @Html.Partial("PartialNavbar")
+        <!--/header-->
+    </section>
+    <!-- Common jquery plugin -->
+
+    @Html.Partial("PartialSliderScript")
+
+    @Html.Partial("PartialSlider")
+
+    @Html.Partial("PartialBooking")
+    @Html.Partial("PartialFeature")
+
+    @Html.Action("PartialDestination")
+    @Html.Action("PartialAbout")
+    @Html.Action("PartialBookingCover")
+
+    @Html.Action("PartialFooter")
+
+    <!-- move top -->
+    @Html.Partial("PartialMainScript")
+    <!-- /move top -->
+
+</body>
+
+</html>

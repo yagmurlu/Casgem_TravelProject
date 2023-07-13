@@ -1,0 +1,29 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Guide>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Rehber İşlemleri</h2>
+<a href="/AdminGuide/AddGuide" class="btn btn-outline-info">Yeni Rehber</a>
+<br />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Rehber Adı</th>
+        <th>Unvan</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.GuideId</td>
+            <td>@item.GuideName</td>
+            <td>@item.GuideTitle</td>
+            <td><a href="/AdminGuide/DeleteGuide/@item.GuideId" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/AdminGuide/EditGuide/@item.GuideId" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
