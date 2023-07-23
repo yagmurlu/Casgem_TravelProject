@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!--
+   Author: W3layouts
+   Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+@Html.Action("PartialHead", "Default")
+<body id="home">
+    @Html.Action("PartialNavbar", "Default")
+    @Html.Action("PartialSliderScript", "Default")
+    <!--theme switcher dark and light mode script//-->
+    <!-- breadcrumbs -->
+    @Html.Action("PartialSection")
+    <!-- breadcrumbs //-->
+    
+    @Html.Action("PartialTravelRegions")
+    @Html.Action("PartialFooter", "Default")
+
+    <!-- move top -->
+    @Html.Action("PartialMainScript", "Default")
+
+    <!-- /move top -->
+
+</body>
+
+</html>

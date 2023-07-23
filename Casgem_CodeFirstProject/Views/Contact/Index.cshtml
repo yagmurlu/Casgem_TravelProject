@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+   Author: W3layouts
+   Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+@Html.Action("PartialHead", "Default")
+<body id="home">
+    <section class=" w3l-header-4 header-sticky">
+        <!--header-->
+        @Html.Action("PartialNavbar", "Default")
+        <!--/header-->
+    </section>
+    @Html.Action("PartialSliderScript", "Default")
+    <!--theme switcher dark and light mode script//-->
+    <!-- breadcrumbs -->
+    @Html.Action("PartialSection")
+    <!-- breadcrumbs //-->
+    <section class="w3l-contact-info-main" id="contact">
+        <div class="contact-sec	editContent">
+            <div class="container">
+                @Html.Action("PartialSendMessage")
+                @Html.Action("PartialQuickContact")
+            </div>
+        </div>
+    </section>
+
+    @Html.Action("PartialFooter", "Default")
+
+    <!-- move top -->
+    @Html.Action("PartialMainScript", "Default")
+    <!-- /move top -->
+
+</body>
+
+</html>

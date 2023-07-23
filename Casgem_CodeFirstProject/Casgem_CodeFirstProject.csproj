@@ -130,8 +130,10 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AdminGuideController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
+    <Compile Include="Controllers\ExploreController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\SocialMediaController.cs" />
@@ -512,6 +514,14 @@
     <Content Include="Views\About\PartialSection1.cshtml" />
     <Content Include="Views\About\PartialSection2.cshtml" />
     <Content Include="Views\About\PartialSection3.cshtml" />
+    <Content Include="Views\Explore\Index.cshtml" />
+    <Content Include="Views\Explore\PartialSection.cshtml" />
+    <Content Include="Views\Explore\PartialTypesOfTravel.cshtml" />
+    <Content Include="Views\Explore\PartialTravelRegions.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Contact\PartialSection.cshtml" />
+    <Content Include="Views\Contact\PartialQuickContact.cshtml" />
+    <Content Include="Views\Contact\PartialSendMessage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
