@@ -139,13 +139,26 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\SocialMediaController.cs" />
     <Compile Include="DAL\Context\TravelContext.cs" />
+    <Compile Include="DAL\Entities\About.cs" />
+    <Compile Include="DAL\Entities\AboutMe.cs" />
     <Compile Include="DAL\Entities\Admin.cs" />
     <Compile Include="DAL\Entities\Booking.cs" />
+    <Compile Include="DAL\Entities\Category.cs" />
     <Compile Include="DAL\Entities\Contact.cs" />
+    <Compile Include="DAL\Entities\ContactSocial.cs" />
     <Compile Include="DAL\Entities\Destination.cs" />
+    <Compile Include="DAL\Entities\Explore.cs" />
+    <Compile Include="DAL\Entities\Feature.cs" />
+    <Compile Include="DAL\Entities\FooterContact.cs" />
+    <Compile Include="DAL\Entities\FooterGalery.cs" />
+    <Compile Include="DAL\Entities\FooterTravelTrip.cs" />
+    <Compile Include="DAL\Entities\Galery.cs" />
     <Compile Include="DAL\Entities\Guide.cs" />
+    <Compile Include="DAL\Entities\Place.cs" />
+    <Compile Include="DAL\Entities\Service.cs" />
     <Compile Include="DAL\Entities\Slider.cs" />
     <Compile Include="DAL\Entities\SocialMedia.cs" />
+    <Compile Include="DAL\Entities\Team.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -164,6 +177,10 @@
     <Compile Include="Migrations\202307240419413__SliderTbl.cs" />
     <Compile Include="Migrations\202307240419413__SliderTbl.designer.cs">
       <DependentUpon>202307240419413__SliderTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307240935203__AddTables.cs" />
+    <Compile Include="Migrations\202307240935203__AddTables.designer.cs">
+      <DependentUpon>202307240935203__AddTables.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -563,6 +580,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202307240419413__SliderTbl.resx">
       <DependentUpon>202307240419413__SliderTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307240935203__AddTables.resx">
+      <DependentUpon>202307240935203__AddTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
