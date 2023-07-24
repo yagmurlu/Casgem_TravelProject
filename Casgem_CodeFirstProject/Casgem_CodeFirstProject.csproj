@@ -303,18 +303,6 @@
     <Content Include="Template\proje2Template\go-trip-starter\assets\fonts\fontawesome-webfont.woff" />
     <Content Include="Template\proje2Template\go-trip-starter\assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="Template\proje2Template\go-trip-starter\assets\fonts\FontAwesome.otf" />
-    <Content Include="Views\Default\Index.cshtml" />
-    <Content Include="Views\Default\PartialHead.cshtml" />
-    <Content Include="Views\Default\PartialBooking.cshtml" />
-    <Content Include="Views\Default\PartialDestination.cshtml" />
-    <Content Include="Views\Default\PartialNavbar.cshtml" />
-    <Content Include="Views\Default\PartialSliderScript.cshtml" />
-    <Content Include="Views\Default\PartialSlider.cshtml" />
-    <Content Include="Views\Default\PartialFeature.cshtml" />
-    <Content Include="Views\Default\PartialAbout.cshtml" />
-    <Content Include="Views\Default\PartialBookingCover.cshtml" />
-    <Content Include="Views\Default\PartialFooter.cshtml" />
-    <Content Include="Views\Default\PartialMainScript.cshtml" />
     <Content Include="Template\bootstrap-sidebar-03\sidebar-03\.DS_Store" />
     <Content Include="Template\bootstrap-sidebar-03\sidebar-03\css\.DS_Store" />
     <Content Include="Template\bootstrap-sidebar-03\sidebar-03\css\bootstrap\.DS_Store" />
@@ -565,6 +553,24 @@
     <Content Include="Views\Explore\Index.cshtml" />
     <Content Include="Views\Explore\PartialService.cshtml" />
     <Content Include="Views\Explore\PartialImage.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\PartialHead.cshtml" />
+    <Content Include="Views\Default\PartialNavbar.cshtml" />
+    <Content Include="Views\Default\PartialNavbarScript.cshtml" />
+    <Content Include="Views\Default\PartialFeature.cshtml" />
+    <Content Include="Views\Default\PartialHolidayPlan.cshtml" />
+    <Content Include="Views\Default\PartialPlace.cshtml" />
+    <Content Include="Views\Default\PartialDestination.cshtml" />
+    <Content Include="Views\Default\PartialExplore.cshtml" />
+    <Content Include="Views\Default\PartialBookTravel.cshtml" />
+    <Content Include="Views\Default\PartialFooter.cshtml" />
+    <Content Include="Views\Default\PartialSocialMedia.cshtml" />
+    <Content Include="Views\Default\PartialCategory.cshtml" />
+    <Content Include="Views\Default\PartialGalery.cshtml" />
+    <Content Include="Views\Default\PartialTravelTrip.cshtml" />
+    <Content Include="Views\Default\PartialScript.cshtml" />
+    <Content Include="Views\Default\Team.cshtml" />
+    <Content Include="Views\Default\PartialFeature2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

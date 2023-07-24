@@ -8,7 +8,7 @@
                 @foreach (var guide in Model)
                 {
                     <div class="col-lg-3 col-md-6 col-sm-6 column">
-                        <a href="#"><img class="img img-responsive" src="@guide.ImageUrl" alt=""></a>
+                        <a href="#"><img class="img img-responsive" src="@guide.GuideImageURL" alt=""></a>
                         <h4><a href="#">@guide.GuideName</a></h4>
                         <div class="w3l-team-7_bottom">
                             <div class="w3l-team-7_bottom-left">
@@ -17,7 +17,7 @@
                             <ul class="social_7 mt-3">
                                 @foreach (var social in guide.SocialMedia)
                                 {
-                                    <li><a href="@social.SocialMediaUrl"><span class="@social.Icon"></span></a></li>
+                                    <li><a href="@social.SocialMediaURL"><span class="fa fa-facebook"></span></a></li>
                                 }
 
                             </ul>

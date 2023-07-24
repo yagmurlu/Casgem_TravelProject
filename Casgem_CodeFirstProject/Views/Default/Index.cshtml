@@ -3,40 +3,24 @@
     Layout = null;
 }
 
-
-
-<!--
-   Author: W3layouts
-   Author URL: http://w3layouts.com
--->
 <!doctype html>
 <html lang="en">
 @Html.Partial("PartialHead")
 <body id="home">
-    <section class=" w3l-header-4 header-sticky">
-        <!--header-->
-        @Html.Partial("PartialNavbar")
-        <!--/header-->
-    </section>
-    <!-- Common jquery plugin -->
-
-    @Html.Partial("PartialSliderScript")
-
-    @Html.Action("PartialSlider")
-
-    @Html.Action("PartialBooking")
+    @Html.Action("PartialNavbar")
+    @Html.Action("PartialNavbarScript")
     @Html.Action("PartialFeature")
-
+    @Html.Action("PartialHolidayPlan")
+    @Html.Action("PartialPlace")
+    @Html.Action("PartialFeature2")
     @Html.Action("PartialDestination")
-    @Html.Action("PartialAbout")
-    @Html.Action("PartialBookingCover")
-
+    @Html.Action("PartialExplore")
+    @Html.Action("PartialBookTravel")
     @Html.Action("PartialFooter")
-
-    <!-- move top -->
-    @Html.Partial("PartialMainScript")
-    <!-- /move top -->
-
+    @*@Html.Action("PartialSocialMedia")*@
+    @Html.Action("PartialCategory")
+    @Html.Action("PartialGalery")
+    @Html.Action("PartialTravelTrip")
+    @Html.Action("PartialScript")
 </body>
-
 </html>

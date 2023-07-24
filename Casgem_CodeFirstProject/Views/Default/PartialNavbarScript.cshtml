@@ -1,24 +1,14 @@
 ﻿
 <script src="~/Template/proje2Template/go-trip-starter/assets/js/jquery-3.3.1.min.js"></script>
-
- <!-- Common jquery plugin -->
-<!--bootstrap working-->
-
 <script src="~/Template/proje2Template/go-trip-starter/assets/js/bootstrap.min.js"></script>
-
-<!--bootstrap working//-->
-<!--/MENU-JS-->
 <script>$(window).on("scroll", function () {
 	  var scroll = $(window).scrollTop();
-
 	  if (scroll >= 80) {
 		$("#site-header").addClass("nav-fixed");
 	  } else {
 		$("#site-header").removeClass("nav-fixed");
 	  }
 	});
-
-	//Main navigation Active Class Add Remove
 	$(".navbar-toggler").on("click", function () {
 	  $("header").toggleClass("active");
 	});
@@ -32,15 +22,11 @@
 		}
 	  });
 	});</script>
-<!--//MENU-JS-->
-<!-- disable body scroll which navbar is in active -->
 <script>$(function () {
   $('.navbar-toggler').click(function () {
     $('body').toggleClass('noscroll');
   })
 });</script>
-<!-- disable body scroll which navbar is in active -->
-<!--theme switcher dark and light mode script-->
 <script>const bodyElement = document.querySelector('body');
 	const themeToggle = document.querySelector('#themeToggle');
 	const darkModeMql = window.matchMedia('(prefers-color-scheme: dark)');
@@ -54,7 +40,6 @@
 		themeToggle.checked = true;
 	  }
 	}
-
 	function userPreference(e) {
 	  if (e.matches) {
 		bodyElement.classList.add("dark");
@@ -64,9 +49,7 @@
 		return ""
 	  }
 	}
-
 	darkModeMql.addListener(userPreference);
-
 	function themeSwitcher(e) {
 	  if (e.target.checked) {
 		bodyElement.classList.add('dark');
@@ -76,6 +59,5 @@
 		localStorage.setItem('theme', '');
 	  }
 	}
-
 	themeToggle.addEventListener('change', themeSwitcher);</script>
-<!--theme switcher dark and light mode script//-->
+
