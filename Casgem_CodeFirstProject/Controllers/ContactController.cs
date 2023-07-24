@@ -12,43 +12,39 @@ namespace Casgem_CodeFirstProject.Controllers
     {
         // GET: Contact
         TravelContext travelContext = new TravelContext();
+
         [HttpGet]
         public ActionResult Index()
-        {       
+        {
             return View();
         }
+
         [HttpPost]
-        public ActionResult Index(Contact contact)
+        public ActionResult Index(Contact p)
         {
-            travelContext.Contacts.Add(contact);
-            contact.MessageDate = DateTime.Parse(DateTime.Now.ToString("dd-MM-yyyy"));
+            travelContext.Contacts.Add(p);
+            p.MessageDate = DateTime.Parse(DateTime.Now.ToString("dd-MM-yyyy"));
             travelContext.SaveChanges();
+
             return RedirectToAction("Index", "Default");
         }
-        public ActionResult GetContact()
+        public PartialViewResult PartialDetail()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialTeam()
+        {
+            return PartialView();
+        }
+        public PartialViewResult Contact2()
         {
             var values = travelContext.Contacts.ToList();
-            return View(values);
+            return PartialView(values);
         }
-        public ActionResult DeleteContact(int id)
+        public PartialViewResult Map()
         {
-            var value = travelContext.Contacts.Find(id);
-            travelContext.Contacts.Remove(value);
-            travelContext.SaveChanges();
-            return RedirectToAction("GetContact");
-        }
+            return PartialView();
 
-        public PartialViewResult PartialSection()
-        {
-            return PartialView();
-        }
-        public PartialViewResult PartialQuickContact()
-        {
-            return PartialView();
-        }
-        public PartialViewResult PartialSendMessage()
-        {
-            return PartialView();
         }
     }
 }

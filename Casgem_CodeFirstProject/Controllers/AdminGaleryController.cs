@@ -7,25 +7,14 @@ using System.Web.Mvc;
 
 namespace Casgem_CodeFirstProject.Controllers
 {
-    public class ExploreController : Controller
+    public class AdminGaleryController : Controller
     {
-        // GET: Explore
+        // GET: AdminGalery
         TravelContext travelContext = new TravelContext();
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public PartialViewResult PartialService()
-        {
-            var values = travelContext.Services.ToList();
-            return PartialView(values);
-        }
-
-        public PartialViewResult PartialImage()
-        {
             var values = travelContext.Galeries.ToList();
-            return PartialView(values);
+            return View(values);
         }
     }
 }

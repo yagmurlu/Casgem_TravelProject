@@ -15,19 +15,36 @@ namespace Casgem_CodeFirstProject.Controllers
         {
             return View();
         }
-        public PartialViewResult PartialSection()
+
+        public PartialViewResult PartialScript()
         {
             return PartialView();
         }
-        public PartialViewResult PartialSection1()
+        public PartialViewResult PartialAboutMe()
         {
+            ViewBag.title1 = travelContext.AboutMes.Select(x => x.Title1).FirstOrDefault();
+            ViewBag.description1 = travelContext.AboutMes.Select(x => x.Description1).FirstOrDefault();
+            ViewBag.imageUrl1 = travelContext.AboutMes.Select(x => x.ImageUrl1).FirstOrDefault();
             return PartialView();
         }
-        public PartialViewResult PartialSection2()
+        public PartialViewResult PartialAboutMe2()
         {
+            ViewBag.title2 = travelContext.AboutMes.Select(x => x.Title2).FirstOrDefault();
+            ViewBag.description2 = travelContext.AboutMes.Select(x => x.Description2).FirstOrDefault();
+            ViewBag.imageUrl2 = travelContext.AboutMes.Select(x => x.ImageUrl2).FirstOrDefault();
             return PartialView();
         }
-        public PartialViewResult PartialSection3()
+        public PartialViewResult PartialGuide()
+        {
+
+            var guideSocialMediaList = travelContext.Guides
+           .Include("SocialMedia")
+           .ToList();
+
+            return PartialView(guideSocialMediaList);
+
+        }
+        public PartialViewResult PartialMainPage()
         {
             return PartialView();
         }
