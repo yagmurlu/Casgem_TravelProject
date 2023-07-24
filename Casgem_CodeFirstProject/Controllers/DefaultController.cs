@@ -23,6 +23,7 @@ namespace Casgem_CodeFirstProject.Controllers
         }
         public PartialViewResult PartialBooking()
         {
+           
             return PartialView();
         }
         public PartialViewResult PartialNavbar()

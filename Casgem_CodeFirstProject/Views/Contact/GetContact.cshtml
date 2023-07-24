@@ -1,0 +1,32 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Contact>
+@{
+    ViewBag.Title = "GetContact";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Gelen Mesajlar</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>İsim-Soyisim</th>
+        <th>Mail</th>
+        <th>Konu</th>
+        <th>Mesaj</th>
+        <th>Mesaj Tarihi</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ContactID</td>
+            <td>@item.NameSurname</td>
+            <td>@item.Mail</td>
+            <td>@item.Subject</td>
+            <td>@item.Message</td>
+            <td>@item.MessageDate</td>
+
+            <td><a href="/Contact/DeleteContact/@item.ContactID" class="btn btn-outline-success">Sil</a></td>
+        </tr>
+    }
+</table>
