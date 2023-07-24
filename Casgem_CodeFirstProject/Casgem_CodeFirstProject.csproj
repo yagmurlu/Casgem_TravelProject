@@ -143,6 +143,7 @@
     <Compile Include="DAL\Entities\Contact.cs" />
     <Compile Include="DAL\Entities\Destination.cs" />
     <Compile Include="DAL\Entities\Guide.cs" />
+    <Compile Include="DAL\Entities\Slider.cs" />
     <Compile Include="DAL\Entities\SocialMedia.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -158,6 +159,10 @@
     <Compile Include="Migrations\202307121159275_mig_add_admin_entity.cs" />
     <Compile Include="Migrations\202307121159275_mig_add_admin_entity.designer.cs">
       <DependentUpon>202307121159275_mig_add_admin_entity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307240419413__SliderTbl.cs" />
+    <Compile Include="Migrations\202307240419413__SliderTbl.designer.cs">
+      <DependentUpon>202307240419413__SliderTbl.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -496,7 +501,6 @@
     <Content Include="Template\bootstrap-sidebar-03\__MACOSX\sidebar-03\scss\bootstrap\utilities\.__text.scss" />
     <Content Include="Template\bootstrap-sidebar-03\__MACOSX\sidebar-03\scss\bootstrap\utilities\.__visibility.scss" />
     <Content Include="Template\bootstrap-sidebar-03\__MACOSX\sidebar-03\scss\bootstrap\vendor\.__rfs.scss" />
-    <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\AdminGuide\Index.cshtml" />
     <Content Include="Views\AdminGuide\AddGuide.cshtml" />
     <Content Include="Views\AdminGuide\EditGuide.cshtml" />
@@ -522,6 +526,9 @@
     <Content Include="Views\Contact\PartialSection.cshtml" />
     <Content Include="Views\Contact\PartialQuickContact.cshtml" />
     <Content Include="Views\Contact\PartialSendMessage.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\EditHomeSlider.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -549,6 +556,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202307121159275_mig_add_admin_entity.resx">
       <DependentUpon>202307121159275_mig_add_admin_entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307240419413__SliderTbl.resx">
+      <DependentUpon>202307240419413__SliderTbl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

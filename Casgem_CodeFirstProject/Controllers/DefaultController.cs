@@ -1,4 +1,5 @@
 ﻿using Casgem_CodeFirstProject.DAL.Context;
+using Casgem_CodeFirstProject.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace Casgem_CodeFirstProject.Controllers
         {
             return View();
         }
+       
         public PartialViewResult PartialHead()
         {
             return PartialView();
@@ -33,7 +35,8 @@ namespace Casgem_CodeFirstProject.Controllers
         }
         public PartialViewResult PartialSlider()
         {
-            return PartialView();
+            var values = travelContext.Sliders.ToList();
+            return PartialView(values);
         }
        
         public PartialViewResult PartialFeature()
