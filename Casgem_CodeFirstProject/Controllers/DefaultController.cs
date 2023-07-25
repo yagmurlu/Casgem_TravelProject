@@ -119,7 +119,8 @@ namespace Casgem_CodeFirstProject.Controllers
         }
         public PartialViewResult PartialFeature2()
         {
-            return PartialView();
+            var values=travelContext.Places.ToList();   
+            return PartialView(values);
         }
 
     }

@@ -1,4 +1,4 @@
-﻿
+﻿@model  Casgem_CodeFirstProject.DAL.Entities.FooterContact
 <section class="w3l-contact-info-main" id="contact">
     <div class="contact-sec	editContent">
         <div class="container">
@@ -14,7 +14,7 @@
                             <span class="fa fa-phone text-secondary"></span>
                         </div>
                         <div class="cont-right">
-                            <p class="para"><a href="tel:+44 99 555 42">+90 500000</a></p>
+                            <p class="para"><a href="@ViewBag.Phone">@ViewBag.Phone</a></p>
                         </div>
                     </div>
                     <div class="cont-top margin-up">
@@ -22,7 +22,7 @@
                             <span class="fa fa-envelope-o text-secondary"></span>
                         </div>
                         <div class="cont-right">
-                            <p class="para"><a href="mailto:example@mail.com" class="mail">zehra@mail.com</a></p>
+                            <p class="para"><a href="mailto:@ViewBag.Mail" class="mail">@ViewBag.Mail</a></p>
                         </div>
                     </div>
                     <div class="cont-top margin-up">
@@ -31,9 +31,7 @@
                         </div>
                         <div class="cont-right">
                             <p class="para">
-                                Türkiye,
-                                <br> Ankara,
-                                <br> Çankaya.
+                                @ViewBag.Address
                             </p>
                         </div>
                     </div>

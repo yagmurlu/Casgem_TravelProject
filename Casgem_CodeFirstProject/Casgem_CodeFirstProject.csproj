@@ -132,6 +132,7 @@
     <Compile Include="Controllers\AdminAboutMeController.cs" />
     <Compile Include="Controllers\AdminContactController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AdminFeatureController.cs" />
     <Compile Include="Controllers\AdminGaleryController.cs" />
     <Compile Include="Controllers\AdminGuideController.cs" />
     <Compile Include="Controllers\AdminHomeController.cs" />
@@ -571,6 +572,9 @@
     <Content Include="Views\Default\PartialScript.cshtml" />
     <Content Include="Views\Default\Team.cshtml" />
     <Content Include="Views\Default\PartialFeature2.cshtml" />
+    <Content Include="Views\AdminFeature\Index.cshtml" />
+    <Content Include="Views\AdminFeature\UpdateAdminFeature.cshtml" />
+    <Content Include="Views\AdminMessage\EditContact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

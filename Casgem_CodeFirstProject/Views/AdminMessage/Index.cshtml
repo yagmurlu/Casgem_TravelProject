@@ -1,19 +1,28 @@
-﻿@model Casgem_CodeFirstProject.DAL.Entities.FooterContact
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.FooterContact>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <h2>İletişim</h2>
-<form method="post">
-    @Html.HiddenFor(x => x.FooterID)
-    @Html.Label("Mail")
-    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
-    <br />
-    @Html.Label("Telefon")
-    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
-    <br />
-    @Html.Label("Adres")
-    @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
-    <br />
-    <button class="btn btn-info">Güncelle</button>
-</form>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Mail</th>
+        <th>Telefon</th>
+        <th>Adres</th>
+        <th>İcon</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FooterID</td>
+            <td>@item.Mail</td>
+            <td>@item.Phone</td>
+            <td>@item.Address</td>
+            <td>@item.Icon</td>
+           
+            <td><a href="/AdminMessage/EditContact/@item.FooterID" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>

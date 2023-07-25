@@ -9,12 +9,14 @@
     <tr>
         <th>#</th>
         <th>Başlık</th>
+        <th>Açıklama</th>
         <th>Güncelle</th>
     </tr>
     @foreach (var item in Model)
     {
         <tr>
             <td>@item.AboutId</td>
+            <td>@item.Description</td>
             <td>@item.Title</td>
             <td><a class="btn btn-success" href="/AdminAbout/AdminAboutUpdate/@item.AboutId">Güncelle</a></td>
         </tr>

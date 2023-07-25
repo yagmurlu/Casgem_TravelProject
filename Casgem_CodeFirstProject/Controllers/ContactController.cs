@@ -43,6 +43,9 @@ namespace Casgem_CodeFirstProject.Controllers
         }
         public PartialViewResult Map()
         {
+            ViewBag.address = travelContext.FooterContacts.Select(x => x.Address).FirstOrDefault();
+            ViewBag.phone = travelContext.FooterContacts.Select(x => x.Phone).FirstOrDefault();
+            ViewBag.mail = travelContext.FooterContacts.Select(x => x.Mail).FirstOrDefault();
             return PartialView();
 
         }

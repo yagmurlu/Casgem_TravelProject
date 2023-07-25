@@ -8,32 +8,32 @@ using System.Web.Mvc;
 
 namespace Casgem_CodeFirstProject.Controllers
 {
-    public class AdminMessageController : Controller
+    public class AdminFeatureController : Controller
     {
-        // GET: AdminMessage
+        // GET: AdminFeature
         TravelContext travelContext = new TravelContext();
-
-       
         public ActionResult Index()
         {
-            var values = travelContext.FooterContacts.ToList();
+            var values = travelContext.Places.ToList();
             return View(values);
         }
-
-        public ActionResult EditContact(int id)
+        [HttpGet]
+        public ActionResult UpdateAdminFeature(int id)
         {
-            var value = travelContext.FooterContacts.Find(id);
+            var value = travelContext.Places.Find(id);
+
             return View(value);
         }
+
         [HttpPost]
-        public ActionResult EditContact(FooterContact p)
+        public ActionResult UpdateAdminFeature(Place p)
         {
-            var value = travelContext.FooterContacts.Find(p.FooterID);
-            value.Phone = p.Phone;
-            value.Mail = p.Mail;
-            value.Address = p.Address;
-            value.Icon = p.Icon;
+            var value = travelContext.Places.Find(p.PlaceId);
+            value.Title = p.Title;
+            value.Description = p.Description;
+            value.ImageUrl = p.ImageUrl;
             travelContext.SaveChanges();
+
             return RedirectToAction("Index");
         }
     }

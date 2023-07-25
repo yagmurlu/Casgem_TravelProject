@@ -1,0 +1,22 @@
+﻿@model Casgem_CodeFirstProject.DAL.Entities.Place
+
+    @{
+        ViewBag.Title = "UpdateAdminFeature";
+        Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    }
+
+    <h2>Popüler Seyahatları Düzenleme</h2>
+
+    <form method="post">
+        @Html.HiddenFor(x => x.PlaceId)
+        <label>Ülke</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+        <br />
+        <label>Açıklama</label>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+        <br />
+        <label>Resim</label>
+        @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-info">Kaydet</button>
+    </form>
