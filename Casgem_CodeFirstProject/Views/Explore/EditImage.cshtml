@@ -1,0 +1,21 @@
+﻿@model Casgem_CodeFirstProject.DAL.Entities.Galery
+@{
+    ViewBag.Title = "EditImage";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Keşfet Düzenleme Sayfası</h2>
+
+<form method="post">
+    @Html.HiddenFor(x => x.GaleryId)
+    <label>Tur Adı</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    <label>Tur Açıklaması</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    <label>Tur Fotoğrafı</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>

@@ -16,12 +16,15 @@
     @Html.Label("Kontenjan")
     @Html.TextBoxFor(x => x.Capacity, new { @class = "form-control" })
     <br />
+    @Html.Label("Fiyat")
+    @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+    <br />
     @Html.Label("Açıklama")
     @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
     <br />
     @Html.Label("Tur Fotoğrafı")
     @Html.TextBoxFor(x => x.ImageURL, new { @class = "form-control" })
-    <br /> 
+    <br />
     @Html.Label("Durum")
     @Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
     <br />

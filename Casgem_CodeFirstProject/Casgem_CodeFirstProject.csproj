@@ -583,6 +583,9 @@
     <Content Include="Views\Destination\Index.cshtml" />
     <Content Include="Views\Destination\EditDestination.cshtml" />
     <Content Include="Views\Destination\AddDestination.cshtml" />
+    <Content Include="Views\Explore\GetImage.cshtml" />
+    <Content Include="Views\Explore\EditImage.cshtml" />
+    <Content Include="Views\Explore\AddImage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

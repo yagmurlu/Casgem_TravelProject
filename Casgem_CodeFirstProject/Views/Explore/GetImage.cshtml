@@ -1,0 +1,33 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Galery>
+@{
+    ViewBag.Title = "GetImage";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Keşfet Düzenleme</h2>
+<br />
+<a href="/Explore/AddImage/" class="btn btn-outline-success">Ekle</a>
+<br />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Başlık</th>
+        <th>Açıklama</th>
+        <th>Resim URL</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.GaleryId</td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td>@item.ImageUrl</td>
+
+            <td><a href="/Explore/EditImage/@item.GaleryId" class="btn btn-outline-primary">Güncelle</a></td>
+            <td><a href="/Explore/DeleteImage/@item.GaleryId" class="btn btn-outline-danger">Sil</a></td>
+        </tr>
+    }
+</table>
