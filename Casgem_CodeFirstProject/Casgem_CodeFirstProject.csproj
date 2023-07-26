@@ -141,6 +141,7 @@
     <Compile Include="Controllers\BookingController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\DestinationController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\ExploreController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -239,6 +240,10 @@
     <Content Include="Template\bootstrap-sidebar-03\__MACOSX\sidebar-03\js\._jquery.min.js" />
     <Content Include="Template\bootstrap-sidebar-03\__MACOSX\sidebar-03\js\._main.js" />
     <Content Include="Template\bootstrap-sidebar-03\__MACOSX\sidebar-03\js\._popper.js" />
+    <Content Include="Template\ErrorPage\Upward-Error-Page-Starter\css\style.css" />
+    <Content Include="Template\ErrorPage\Upward-Error-Page-Starter\images\bg.jpg" />
+    <Content Include="Template\ErrorPage\Upward-Error-Page-Starter\index.html" />
+    <Content Include="Template\ErrorPage\Upward-Error-Page-Starter\starter-license-W3Layouts.txt" />
     <Content Include="Template\proje2Template\go-trip-starter\about.html" />
     <Content Include="Template\proje2Template\go-trip-starter\assets\css\style-starter.css" />
     <Content Include="Template\proje2Template\go-trip-starter\assets\fonts\fontawesome-webfont.svg" />
@@ -575,6 +580,9 @@
     <Content Include="Views\AdminFeature\Index.cshtml" />
     <Content Include="Views\AdminFeature\UpdateAdminFeature.cshtml" />
     <Content Include="Views\AdminMessage\EditContact.cshtml" />
+    <Content Include="Views\Destination\Index.cshtml" />
+    <Content Include="Views\Destination\EditDestination.cshtml" />
+    <Content Include="Views\Destination\AddDestination.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -14,6 +14,7 @@
         <th>#</th>
         <th>Rehber Adı</th>
         <th>Unvan</th>
+        <th>Resim</th>
         <th>Sil</th>
         <th>Güncelle</th>
     </tr>
@@ -23,6 +24,7 @@
             <td>@item.GuideId</td>
             <td>@item.GuideName</td>
             <td>@item.GuideTitle</td>
+            <td>@item.GuideImageURL</td>
             <td><a href="/AdminGuide/DeleteGuide/@item.GuideId" class="btn btn-outline-danger">Sil</a></td>
             <td><a href="/AdminGuide/EditGuide/@item.GuideId" class="btn btn-outline-success">Güncelle</a></td>
         </tr>

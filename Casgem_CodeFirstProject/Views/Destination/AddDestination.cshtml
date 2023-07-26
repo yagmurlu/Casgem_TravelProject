@@ -1,0 +1,29 @@
+﻿@model Casgem_CodeFirstProject.DAL.Entities.Destination
+@{
+    ViewBag.Title = "AddDestination";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Rehber Ekleme Sayfası</h2>
+<form method="post">
+
+    @Html.Label("Tur Adı")
+    @Html.TextBoxFor(x => x.DestinationName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Gün Sayıs")
+    @Html.TextBoxFor(x => x.DayNight, new { @class = "form-control" })
+    <br />
+    @Html.Label("Kontenjan")
+    @Html.TextBoxFor(x => x.Capacity, new { @class = "form-control" })
+    <br />
+    @Html.Label("Açıklama")
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tur Fotoğrafı")
+    @Html.TextBoxFor(x => x.ImageURL, new { @class = "form-control" })
+    <br /> 
+    @Html.Label("Durum")
+    @Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>

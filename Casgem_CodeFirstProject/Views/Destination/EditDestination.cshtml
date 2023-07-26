@@ -1,0 +1,29 @@
+﻿@model Casgem_CodeFirstProject.DAL.Entities.Destination
+@{
+    ViewBag.Title = "EditDestination";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Rehber Güncelleme Sayfası</h2>
+<form method="post">
+    @Html.HiddenFor(x => x.DestinationID)
+    <label>Tur Adı</label>
+    @Html.TextBoxFor(x => x.DestinationName, new { @class = "form-control" })
+    <br />
+    <label>Gün Sayısı</label>
+    @Html.TextBoxFor(x => x.DayNight, new { @class = "form-control" })
+    <br />
+    <label>Kontenjan</label>
+    @Html.TextBoxFor(x => x.Capacity, new { @class = "form-control" })
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    <label>Tur Fotoğrafı</label>
+    @Html.TextBoxFor(x => x.ImageURL, new { @class = "form-control" })
+    <br />
+    <label>Durumu</label>
+    @Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>

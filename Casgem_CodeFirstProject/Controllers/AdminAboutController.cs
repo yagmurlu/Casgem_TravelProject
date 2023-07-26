@@ -33,7 +33,7 @@ namespace Casgem_CodeFirstProject.Controllers
             values.Title = p.Title;
             values.Description = p.Description;
             travelContext.SaveChanges();
-            return View(values);
+            return RedirectToAction("Index");
         }
     }
 }

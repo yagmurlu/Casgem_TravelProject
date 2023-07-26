@@ -1,0 +1,37 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Destination>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Popüler Turlar</h2>
+<br />
+<a class="btn btn-success" href="/Destination/AddDestination/">Ekle</a>
+<br />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Tur Adı</th>
+        <th>Gün Sayısı</th>
+        <th>Kontenjan</th>
+        <th>Açıklama</th>
+        <th>Resim</th>
+        <th>Durumu</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.DestinationID</td>
+            <td>@item.DestinationName</td>
+            <td>@item.DayNight</td>
+            <td>@item.Capacity</td>
+            <td>@item.Description</td>
+            <td>@item.ImageURL</td>
+            <td>@item.Status</td>
+            <td><a class="btn btn-primary" href="/Destination/EditDestination/@item.DestinationID">Güncelle</a></td>
+        </tr>
+    }
+
+</table>
