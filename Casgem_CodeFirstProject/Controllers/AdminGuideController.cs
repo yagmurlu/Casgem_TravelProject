@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace Casgem_CodeFirstProject.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class AdminGuideController : Controller
     {
         // GET: AdminGuide
